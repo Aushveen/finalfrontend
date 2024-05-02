@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('login-password').value;
 
         // Send a POST request to the backend to log in
-        fetch('http://localhost:8080/login', {
+        fetch('https://database-demo-latest-7odp.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

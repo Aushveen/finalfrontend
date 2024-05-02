@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchAndDisplayFlowers() {
-        fetch('http://localhost:8080/flowers')
+        fetch('https://database-demo-latest-7odp.onrender.com/flowers')
             .then(response => response.json())
             .then(data => {
                 flowersData = data;
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const flowerDiv = document.createElement('div');
             flowerDiv.className = 'flower';
             flowerDiv.innerHTML = `
-                <img src="http://localhost:8080/flowers/${flower.id}/image" alt="${flower.name}">
+                <img src="https://database-demo-latest-7odp.onrender.com/flowers/${flower.id}/image" alt="${flower.name}">
                 <h2>${flower.name}</h2>
                 <p>$${flower.cost.toFixed(2)}</p>
                 <button>Add to Basket</button>

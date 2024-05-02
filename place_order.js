@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 shippingZipCode: basket[0].shippingZip
             };
 
-            fetch('http://localhost:8080/orders', {
+            fetch('https://database-demo-latest-7odp.onrender.com/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('signup-email').value;
 
         // Send a POST request to the backend to create an account
-        fetch('http://localhost:8080/signup', {
+        fetch('https://database-demo-latest-7odp.onrender.com/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

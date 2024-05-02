@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchOrders() {
-        fetch('http://localhost:8080/orders', {
+        fetch('https://database-demo-latest-7odp.onrender.com/orders', {
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('authToken')}`
             }

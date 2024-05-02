@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const basket = JSON.parse(localStorage.getItem('basket')) || [];
         if (basket.length > 0) {
             // Load image from backend using the URL stored in local storage
-            flowerImage.src = `http://localhost:8080/flowers/${basket[0].id}/image`;
+            flowerImage.src = `https://database-demo-latest-7odp.onrender.com/flowers/${basket[0].id}/image`;
             flowerName.textContent = basket[0].name;
             flowerPrice.textContent = `$${basket[0].price.toFixed(2)}`;
         }
